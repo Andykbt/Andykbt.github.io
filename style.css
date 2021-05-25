@@ -45,7 +45,6 @@ header a:hover {
 
 footer {
     border-top: solid 1px black;
-    height: 100px;
     padding: 25px 0;
     width: 100%;
     margin-top: auto;
@@ -159,10 +158,10 @@ i.fa-external-link-alt {
 }
 
 .content.Contact {
-    transform: translate(0, 50%);
+    width: 80%;
 }
 
-.content.Contact span {
+.content.Contact div {
     width: -moz-fit-content;
     width: fit-content;
 
@@ -196,12 +195,7 @@ i.fa-external-link-alt {
         font-size: 10px;    
     }
 
-    .content.Contact {
-        width: -moz-fit-content;
-        width: fit-content;
-    }
-
-    .content.Contact span {
+    .content.Contact div {
         padding: 5px;
         margin: 0;
     }
