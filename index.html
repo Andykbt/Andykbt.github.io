@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Prompt&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7b6e394807.js" crossorigin="anonymous"></script>
@@ -12,50 +12,58 @@
 </head>
 
 <body>
-    <div class="content header">
-        <h1 class="title">Andy<br>
-            Truong<br>
-            Computer Science
-        </h1>
+    <header style="height: 50px; position: sticky;">
+        <div><a href="#Contact">Contact Me</a></div>
+        <div><a href="/Assets/Andy Truong Resume.pdf" target="_blank">Resume</a></div>
+        <div><a href="#Experience">Experience</a></div>
+        <div><a href="#Projects">Projects</a></div>
+    </header>
+
+    <div class="page-body">
+        <div class="content header">
+            <h1 class="title">Andy<br>
+                Truong<br>
+                Computer Science
+            </h1>
+        </div>
+
+        <div class="content subtitle">
+            <h1>Aspiring Software Developer, Student</h1>
+        </div>
+
+        <div class="content body">
+            <h2>My Projects</h2>
+            <div id="Projects">
+                <div class="card interactive">
+                    <a><img src="" height="150" width="100%"></a>
+                    <div class="project-title"><h3>Personal Website</h3></div>
+                    <div class="project-desc">
+                        <p>Ut ipsum aliqua quis cillum non non ipsum minim. Duis non excepteur consectetur qui ullamco aute excepteur. Est nulla fugiat ipsum duis. Pariatur adipisicing minim enim cupidatat esse eu nostrud quis mollit commodo commodo.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span><a href="https://github.com/Andykbt/Andykbt.github.io" target="_blank" rel="noopener noreferrer"> View Code </a></span>
+                    </div>
+                </div>
+
+                <div class="card interactive">
+                    <a><img src="" height="150" width="100%"></a>
+                    <div class="project-title"><h3>PCMarket Website</h3></div>
+                    <div class="project-desc">
+                        <p>Ut ipsum aliqua quis cillum non non ipsum minim. Duis non excepteur consectetur qui ullamco aute excepteur. Est nulla fugiat ipsum duis. Pariatur adipisicing minim enim cupidatat esse eu nostrud quis mollit commodo commodo.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span><a href="https://www.pcmarket.com.au/" target="_blank" rel="noopener noreferrer"> View Code </a></span>
+                    </div>
+                </div>
+            </div>  
+
+            <h2>My Experience</h2>
+            <div class="Experience"></div>
+        </div>
     </div>
 
-    <div class="content subtitle">
-        <h1>Aspiring Software Developer, Student</h1>
-    </div>
-
-    <div class="content body">
-        <h2>My Projects</h2>
-        <div class="Projects">
-            <div class="card interactive">
-                <a><img src="" height="150" width="100%"></a>
-                <div class="project-title"><h3>Personal Website</h3></div>
-                <div class="project-desc">
-                    <p>Ut ipsum aliqua quis cillum non non ipsum minim. Duis non excepteur consectetur qui ullamco aute excepteur. Est nulla fugiat ipsum duis. Pariatur adipisicing minim enim cupidatat esse eu nostrud quis mollit commodo commodo.</p>
-                </div>
-                <div class="project-footer">
-                    <span><a href="https://github.com/Andykbt/Andykbt.github.io" target="_blank" rel="noopener noreferrer"> View Code </a></span>
-                </div>
-            </div>
-
-            <div class="card interactive">
-                <a><img src="" height="150" width="100%"></a>
-                <div class="project-title"><h3>PCMarket Website</h3></div>
-                <div class="project-desc">
-                    <p>Ut ipsum aliqua quis cillum non non ipsum minim. Duis non excepteur consectetur qui ullamco aute excepteur. Est nulla fugiat ipsum duis. Pariatur adipisicing minim enim cupidatat esse eu nostrud quis mollit commodo commodo.</p>
-                </div>
-                <div class="project-footer">
-                    <span><a href="https://www.pcmarket.com.au/" target="_blank" rel="noopener noreferrer"> View Code </a></span>
-                </div>
-            </div>
-        </div>  
-
-        <h2>My Experience</h2>
-        <div class="Experience"></div>
-
-        <h2>Contact me</h2>
-    </div>
-
-    <div class="footer">
+    <h2 class="content" style="margin-top: 25px;">Contact me</h2>
+    <footer id="Contact" class="footer">
         <div class="content Contact">
             <span class="interactive">
                 <a href="https://github.com/Andykbt" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> github <i class="fas fa-external-link-alt"></i></a>
@@ -65,6 +73,6 @@
                 <a href="mailto:andy.truong2001@gmail.com"><i class="far fa-envelope"></i> andy.truong2001@gmail.com </a>
             </span>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
