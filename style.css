@@ -7,8 +7,6 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 h2 {
@@ -27,19 +25,18 @@ a > img {
 header {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: -1px;
     min-height: 50px;
     border-bottom: solid 1px black;
     background-color: #fdf0e5;
     z-index: 1;
+    text-align:right;
 }
 
 header div {
     display: inline-block;
     transform: translateY(50%);
-    float: right;
     padding: 0 25px;
-    border-left: solid 1px black;
 }
 
 header a:hover {
@@ -71,19 +68,47 @@ footer {
     text-align: right;
 }
 
-.Experience {
+#Projects {
+    /* padding: 0 0px 14px;
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+
+    height: 475px; */
+    padding: 5px;
+    flex: 1;
+    display: flex;
+    overflow: auto;
+}
+
+#Projects .container {
+    display: flex;
+    min-height: min-content;
+}
+
+#Experience {
     background-color: white;
-    width: 100%;
-    height: 150px;
+    padding: 50px;
+}
+
+#Experience > .right {
+    text-align: right;
+    direction: rtl;
+}
+
+#Experience > .right ul li::marker {
+    text-align: right;
 }
 
 .card {
     display: inline-block;
-    width: 325px;
+    /* width: 325px; */
+    max-width: 325px;
+    min-width: 278px;
     border-radius: 2px;
     border: solid 1px black;
     background-color: white;
-    margin-right: 100px;
+    margin: 0 25px;
 }
 
 .interactive {
@@ -148,3 +173,36 @@ i.fa-external-link-alt {
     margin-right: 15px;
 }
 
+@media only screen and (max-width: 822px) {
+    .card {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    header {
+        text-align: center;
+    }
+    
+    header div {
+        padding: 0 5px;
+    }
+
+    .content.header {
+        font-size: 30px;
+    }
+    
+    .content.subtitle {
+        font-size: 10px;    
+    }
+
+    .content.Contact {
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    .content.Contact span {
+        padding: 5px;
+        margin: 0;
+    }
+}
