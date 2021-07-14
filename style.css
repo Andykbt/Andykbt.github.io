@@ -1,15 +1,21 @@
+:root {
+    --main: #fdf0e5;
+    --secondary: white;
+    --font-primary: black;
+    --font-secondary: #3A10E5;
+}
+
 html {
-    background-color: #fdf0e5;
+    background-color: var(--main);
     font-family: 'Prompt', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    min-height: 100vh;
 }
 
-h2 {
+ h2 {
     font-weight: bolder;
 }
 
@@ -19,7 +25,7 @@ a {
 }
 
 a > img {
-    height: 150px;
+    border-bottom: solid 1px black;
 }
 
 header {
@@ -30,7 +36,7 @@ header {
     border-bottom: solid 1px black;
     background-color: #fdf0e5;
     z-index: 1;
-    text-align:right;
+    text-align:left;
 }
 
 header div {
@@ -39,8 +45,18 @@ header div {
     padding: 0 25px;
 }
 
+header a {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 7px;
+    border-radius: 10px;
+}
+
 header a:hover {
-    color: #3A10E5;
+    color: var(--secondary);
+    background-color: var(--font-secondary);
 }
 
 footer {
@@ -67,54 +83,74 @@ footer {
     text-align: right;
 }
 
-#Projects {
-    /* padding: 0 0px 14px;
-    display: flex;
-    justify-content: center;
-    overflow-x: scroll;
-
-    height: 475px; */
-    padding: 5px;
-    flex: 1;
-    display: flex;
-    overflow: auto;
-}
-
-#Projects .container {
-    display: flex;
-    min-height: min-content;
-}
-
-#Experience {
-    background-color: white;
+.container {
     padding: 50px;
 }
 
-#Experience > .right {
+.bg {
+    background-color: white;
+}
+
+#Projects, #About, #Experience {
+    margin-top: 50px;
+}
+section {
+    margin-top: 50px;
+}
+
+#Projects {
+    overflow: auto;
+}
+
+#Projects .container, #Skills .contain {
+    /* display: flex;
+    justify-content:space-evenly;
+    min-height: min-content; */
+    flex: 1;
+    display: flex;
+}
+
+.box {
+    display: flex;
+    min-height: min-content;
+    overflow: auto;
+    padding: 10px 0;
+}
+
+.right {
     text-align: right;
     direction: rtl;
 }
 
-#Experience > .right ul li::marker {
+.right ul li::marker {
     text-align: right;
 }
 
 .card {
-    display: inline-block;
-    /* width: 325px; */
     max-width: 325px;
-    min-width: 278px;
+    min-width: 325px;
     border-radius: 2px;
-    border: solid 1px black;
-    background-color: white;
+    border: solid 1px var(--main);
+    background-color: var(--secondary);
     margin: 0 25px;
 }
 
+.stack-container {
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top:5px;
+    padding: 5px;
+}
+
 .interactive {
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    border: solid 1px var(--font-primary);
+    border-radius: 2px;
 }
 
 .interactive:hover {
@@ -122,24 +158,26 @@ footer {
     transform: translate(5px, -5px);
 }
 
-.project-title {
-    margin: 10px;
+.project-title, .project-desc, .project-footer {
+    width: 90%;
+    margin: auto;
+}
+
+.project-title, .project-desc {
     border-bottom: solid 1px black;
 }
 
 .project-desc {
-    margin: 10px;
+    height: 100px;
+    overflow: hidden;
 }
 
 .project-footer {
-    margin: 0 10px;
-    border-top: solid 1px black;
-    position: relative;
-    min-height: 46px;
+    padding: 10px;
 }
 
 .project-footer a {
-    color: #3A10E5;
+    color: var(--font-secondary);
     border-radius: 5px;
     padding: 7.5px;
 }
@@ -149,12 +187,14 @@ footer {
     transform: translate(0, 50%);
 }
 
-.project-footer a:hover {
-    background-color: #f6f5fa;
+.flex-responsive {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-i.fa-external-link-alt {
-    font-size: 13px;
+.project-footer a:hover {
+    /* background-color: var(--main); */
 }
 
 .content.Contact {
@@ -172,9 +212,44 @@ i.fa-external-link-alt {
     margin-right: 15px;
 }
 
+.link {
+    color: var(--font-secondary);
+    text-decoration: underline;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius:25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 @media only screen and (max-width: 822px) {
     .card {
         margin: 0;
+    }
+
+    #Skills, .flex-responsive {
+        flex-direction: column;
+    }
+
+    .flex-responsive > img {
+        width: 100% !important;
+        margin: 25px 0;
     }
 }
 
