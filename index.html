@@ -22,73 +22,60 @@
     <div class="page-body">
         <div class="content header"><h1 class="title">Andy Truong<br>Computer<br>Science</h1></div>
 
-        <div class="content subtitle"><h1>Aspiring Software Developer, Student</h1></div>
+        <div class="body">
+            <section id="About" class="content">
+                <h1 class="content subtitle">Aspiring Software Developer, Student</h1>
+                <h1 style="margin-bottom: 0;">About me</h1>
+                <p>Passionate University student working towards a Bachelor in Computer Science.
+                    <br> Aiming to apply the knowledge that I've acquired from coursework and self-study
+                    <br> in a professional setting.
+                </p>
+            </section>
 
-        <div class="content body">
-            <div id="About">
-                <h2>About me</h2>
-                <div class="container bg">
-                    <p>Passionate University student working towards a Bachelor in Computer Science.
-                        <br> Aiming to apply the knowledge that I've acquired from coursework and self-study
-                        <br> in a professional setting.
-                    </p>
-                </div>
-            </div>
-
-            <div id="Projects">
-                <h2>Projects</h2>
-                <div class="container" style="justify-content: center;">
+            <section id="Projects">
+                <h1>Projects</h1>
+                <div class="wrapper">
                     <div class="box">
-                        <div class="card interactive">
+                        <article class="card interactive">
                             <a href="iShouldStudy.html" target="_blank" rel="noopener noreferrer">
+                                <section class="artboard1">
+                                    <h3 class="content bg">iShouldStudy</h3>
+                                </section>
                                 <img src="/Assets/iShouldStudy/iShouldStudy landing.PNG" height="180px" width="100%">
                             </a>
+                        </article>
 
-                            <div class="project-title"><h3>iShouldStudy</h3></div>
-                            <div class="project-desc">
-                                <p>A web app to help students study and concentrate. A collaborative project built with React. </p>
-                            </div>
-                            <div class="project-footer">
-                                <div><a href="iShouldStudy.html" target="_blank" rel="noopener noreferrer"> View Project </a></div>
-                            </div>
-                        </div>
-                        
-                        <div class="card interactive">
-                            <a><img src="/Assets/PCMarket/PCM_logo.png" height="180" width="100%" style="object-fit: contain;"></a>
-                            <div class="project-title"><h3>PCMarket Website</h3></div>
-                            <div class="project-desc">
-                                <p>An ecommerce website built with the Neto B@se tag templating language, JQuery, HTML, and CSS.</p>
-                            </div>
-                            <div class="project-footer">
-                                <div><a href="PCMarket.html" target="_blank" rel="noopener noreferrer"> View Project </a></div>
-                            </div>
-                        </div>
+                        <article class="card interactive">
+                            <a href="PCMarket.html" target="_blank" rel="noopener noreferrer">
+                                <section class="artboard2">
+                                    <h3 class="content bg">PCMarket Website</h3>
+                                </section>
+                                <div style="height: 180px; display: flex; align-items: center;" class="bg"><img src="/Assets/PCMarket/PCM_logo.png" height="" width="100%"></div>
+                            </a>
+                        </article>
 
-                        <div class="card interactive">
-                            <a><img src="/Assets/placeholder.png" height="180" width="100%"></a>
-                            <div class="project-title"><h3>vibes</h3></div>
-                            <div class="project-desc">
-                                <p>Music recommendation app based on weather built using React, Node.js. and the Spotify API.</p>
-                            </div>
-                            <div class="project-footer">
-                                <!-- <div><a href="https://github.com/Andykbt/Andykbt.github.io" target="_blank" rel="noopener noreferrer"> View Code </a></div> -->
-                            </div>
-                        </div>
+                        <article class="card interactive">
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                                <section class="artboard4">
+                                    <h3 class="content bg">vibes</h3>
+                                </section>
+                                <img src="/Assets/placeholder.png" height="180px" width="100%">
+                            </a>
+                        </article>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <section id="Skills">
-                <h2>Skills</h2>
-                
-                <div class="container bg" style="padding-bottom: 1px;">
+                <h1>Skills</h1>
+                <div>
                     <p>Through my studies, I've learnt a variety of skills and built a solid understanding 
                         <br /> of Computer Science development concepts.
                         <br /> Here are some of the things I've learnt from self-study and University:
                     </p>
                 </div>
                 
-                <div id="Skills" class="container bg" style="display:flex; justify-content:space-between; padding-top: 0;">
+                <list>
                     <ul>
                         <li> Javascript & Java </li>
                         <li> React </li>
@@ -110,13 +97,12 @@
                         <li> HTML & CSS </li>
                         <li> SQL </li>
                     </ul>
-                </div>
+                </list>
             </section>
 
-            <div id="Experience">
-                <h2>My Experience</h2>
-                <div class="container bg">
-                    <div class="right">
+            <section id="Experience">
+                <h1>My Experience</h1>
+                    <article class="right">
                         <h2>Front-End Developer & Product Manager</h2>
                         <sub>PCMarket | 2020 - Present</sub>
                         <ul>
@@ -127,9 +113,9 @@
                             <li>Assessed UX and UI designs</li>
                             <li>Solved front and back-end issues</li>
                         </ul>
-                    </div>
+                    </article>
     
-                    <div class="">
+                    <div>
                         <h2>Teaching Assistant</h2>
                         <sub>CodeCamp | Feb 2020</sub>
                         <ul>
@@ -138,39 +124,29 @@
                             <li>One-to-one help to individual students during class</li>
                         </ul>
                     </div>
-                    <div style="margin-top: 50px; border-top: solid 1px black;">
-                        <h3>Extracurricular Activities</h3>
-                    </div>
-    
-                    <div>
-                        <h2>Commonwealth Bank Virtual Experience Program Participant</h2>
-                        <sub>Acheived in 2020</sub>
-                        <ul>
-                            <li>Completed Software Engineering - Website Coding module</li>
-                            <li>Participated in open access Commonwealth Bank Virtual Experience Program with Forage</li>
-                        </ul>
-                    </div>
-                </div>
 
-            </div>
+                    <section class="Extra">
+                        <h1>Extracurricular Activities</h1>
+                        <div>
+                            <h2>Commonwealth Bank Virtual Experience Program Participant</h2>
+                            <sub>Acheived in 2020</sub>
+                            <ul>
+                                <li>Completed Software Engineering - Website Coding module</li>
+                                <li>Participated in open access Commonwealth Bank Virtual Experience Program with Forage</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
         </div>
     </div>
 
-    <h2 class="content" style="margin-top: 25px;">Contact me</h2>
-    <footer id="Contact" class="footer">
-        <div class="content Contact">
-            <div class="interactive">
-                <a href="https://github.com/Andykbt" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github <i class="fas fa-external-link-alt"></i></a>
-            </div>
-            
-            <div class="interactive">
-                <a href="https://www.linkedin.com/in/andy-truong-591449216/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn <i class="fas fa-external-link-alt"></i></i></a>
-            </div>
+    <section id="Contact">
+        <h1>Contact me</h1>
+        <article><a href="https://github.com/Andykbt" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github <i class="fas fa-external-link-alt"></i></a></article>
+        
+        <article><a href="https://www.linkedin.com/in/andy-truong-591449216/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn <i class="fas fa-external-link-alt"></i></i></a></article>
 
-            <div class="interactive">
-                <a href="mailto:andy.truong2001@gmail.com"><i class="far fa-envelope"></i> andy.truong2001@gmail.com </a>
-            </div>
-        </div>
-    </footer>
+        <article><a href="mailto:andy.truong2001@gmail.com"><i class="far fa-envelope"></i> andy.truong2001@gmail.com </a></article>
+    </section>
 </body>
 </html>
