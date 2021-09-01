@@ -139,6 +139,28 @@ header a:active:after {
     padding: 10px 0;
 }
 
+.fade-in {
+    transition: 1s ease-in;
+    opacity: 0;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+.fade-on-load {
+    position: relative;
+    top: 25px;
+    transition: 1s ease-in;
+    opacity: 0
+}
+
+.fade-on-load.show {
+    top: 0px;
+    padding-top: 0px;
+    opacity: 1;
+}
+
 #Skills {
     /* background-color: var(--font-secondary); */
     background-color: #2E4A99;
@@ -173,12 +195,18 @@ header a:active:after {
 }
 
 .stack-container {
-    border: solid 1px black;
-    display: flex;
+    color: var(--color-night) !important;
+    border: solid 1px var(--color-night);
+    background-color: white;
+    display: inline-block;
+    transition: 0.2s all;
     align-items: center;
-    border-radius: 5px;
+    width: fit-content;
+    padding: 0.5em;
+    display: flex;
     margin-top:5px;
     padding: 5px;
+    width: 100%;
 }
 
 .interactive {
@@ -215,7 +243,7 @@ header a:active:after {
 
 .project-footer span {
     position: absolute;
-    transform: translate(0, 50%);
+    transform: translate(0, -5px);
 }
 
 #Experience {
@@ -240,9 +268,9 @@ header a:active:after {
     transition: 0.2s all;
 }
 
-#Contact article:hover {
-    box-shadow: -10px 10px var(--color-night);
-    transform: translate(0.25vw, -0.25vw);
+#Contact article:hover, .stack-container:hover {
+    box-shadow: -5px 5px var(--color-night);
+    transform: translate(0.125vw, -0.125vw);
 }
 
 .artboard1, .artboard2, .artboard3, .artboard4 {
@@ -288,13 +316,15 @@ header a:active:after {
     }
 }
 
+@media only screen and (max-width: 769px) {
+    #Skills list {
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 620px) {
     header {
         justify-content: space-evenly;
-    }
-
-    #Skills list {
-        flex-direction: column;
     }
 
     header a {

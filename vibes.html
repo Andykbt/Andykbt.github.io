@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Prompt&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b6e394807.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <title>vibes</title>
+</head>
+
+<body>
+    <header>
+        <div><a href="https://andykbt.github.io/">Home</a></div>
+        <div><a href="#Description">Description</a></div>
+        <div><a href="#Lessons">Lessons</a></div>
+    </header>
+
+    <div class="content header"><h1 class="fade-on-load title">vibes</h1></div>
+
+    <div>
+        <section id="Description" class="Project-Content">
+            <h1>Project Description</h1>
+            <div class="container bg">
+                <p>
+                    vibes is a web application that gets music recommendations based on the weather of a city. Sometimes the weather is a good indicator of your current mood.
+                    This app lets users search for cities in the world, get it's weather data and then get song recommendations based on the weather.<br /><br />
+                    Built using React, Node JS, and Express, it uses weather descriptors such as "Cloudy", "Sunny", etc. to determine the current "mood".
+                </p>
+                <div style="display: inline-block; margin-right: 25px;">
+                    <h3>LIVE</h3>
+                    <a href="https://vibes-spotify.herokuapp.com/" class="link">View Site</a>
+                </div>
+                <div style="display: inline-block; margin-right: 25px;">
+                    <h3>CODE</h3>
+                    <a href="https://github.com/Andykbt/vibes" class="link">View Code</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container flex-responsive">
+            <img style="width: 45%; height: auto;" src="/Assets/vibes/vibes-spotify.herokuapp.com_.png" alt="vibes page">
+            <img style="width: 45%; height: auto;" src="/Assets/vibes/Vibes_Visual_Identity_Official.png" alt="vibes visual identity">
+        </section>
+
+        <section id="Lessons" class="Project-Content">
+            <h1>What I Learnt</h1>
+            <div class="container bg">
+                <p> This was my first time using Node JS in a way that didn't involve anything relatively simple. I had to learn how to create a server and a client that had to regularly communicate with each other.<br>
+                    I've also learned the authentication process using Spotify, where a user would click "login" to get redirected to another page where they would authorise access to their data, then it would get redirected back to the site with the user data.
+                    In this app, this is done by passing the user's access token that is fetched from the authentication process and used in the hash parameters of the website link. This is my why when logging in with Spotify, you may see a long hash.
+                    <br><br>
+
+                    On the frontend side, I used React as I don't believe that I've mastered it and want to work on my React skills more. One of the main struggles I had was making the web app look better through animations.
+                    I've only ever done really basic animations in my previous projects so wanted to test myself and try to make more complex animations. This was another one of the problems that I had to overcome and I definitely spent a couple hours headscratching on getting the right animations to work.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section id="Contact">
+        <h1>Contact me</h1>
+        <article><a href="https://github.com/Andykbt" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github <i class="fas fa-external-link-alt"></i></a></article>
+        
+        <article><a href="https://www.linkedin.com/in/andy-truong-591449216/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn <i class="fas fa-external-link-alt"></i></i></a></article>
+
+        <article><a href="mailto:andy.truong2001@gmail.com"><i class="far fa-envelope"></i> andy.truong2001@gmail.com </a></article>
+    </section>
+</body>
+</html>
