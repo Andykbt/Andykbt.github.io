@@ -149,15 +149,12 @@ header a:active:after {
 }
 
 .fade-on-load {
-    position: relative;
-    top: 25px;
-    transition: 1s ease-in;
-    opacity: 0
+    transition: 1s all ease-in-out;
+    opacity: 0;
 }
 
 .fade-on-load.show {
-    top: 0px;
-    padding-top: 0px;
+    margin-top: 0;
     opacity: 1;
 }
 
